@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "VikingStyle";
+    src: url("fonts/norse-bold-webfont.woff2") format(".woff2"),
+        url("fonts/norse-bold-webfont.woff") format(".woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100v;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width:50%;
+    height: 100%;
+}
