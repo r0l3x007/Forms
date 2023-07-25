@@ -7,44 +7,67 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="imgContainer">
         <img src="austin-poon-JO_S6ewBqAk-unsplash.jpg">
-    </div>
-    <div class="logoContainer">
-        <div id="logoTxt">DesignByRollo</div>
-    </div>
+        <div class="lgoWrapper">
+            <div id="logoTxt">DesignByRollo</div>
+        </div>
+
+<div class="entirewrap">
+    <div class="hwrapper">
     <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepse dreams.</h1>
     <h1>Sign up <i>now<i> to get started</h1>
+    </div>
+    <div class="youwant">
     <h1>You <i>know</i> you want to</h1>
+    </div>
 
     <form>
-        <h1>Let`s do this</h1>
+        <h1>Let`s do this!</h1>
+        <div class="formBody">
+            <div class="row">
+                <div class="inputGroup">
+                     <label for="name">First Name</label>
+                    <input type="text" id="name" name="first_name" placeholder="Enter your first name" required />
+                </div>
+                <div class="inputGroup">
+                    <label for="name">Last Name</label>
+                    <input type="text" id="name" name="last_name" placeholder="Enter your last name" required />
+                </div>
+            </div>
         
-        <div class="nameRow">
-            <label for="name">First Name</label>
-            <input type="text" id="name" name="first_name" required />
+
+        <div class="row">
+            <div class="inputGroup">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+            </div>
+
+            <div class="inputGroup">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone_number"  placeholder="0000000000"  required />
+            </div>
         </div>
 
-        <div class="nameRow">
-            <label for="name">Last Name</label>
-            <input type="text" id="name" name="last_name" required />
-        </div>
+        <div class="row">
+            <div class="inputGroup">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="user_password" required />
+            </div>
 
-        <div class="contactDetails">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <div class="inputGroup">
+                <label for="password">Reconfirm Password</label>
+                <input type="password" id="password" name="reconfirmed_password" required />
+            </div>
         </div>
-
-        <div class="contactDetails">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone_number" required />
         </div>
     </form>
+
     <div class="btnrow">
         <button> Create Account</button>
     </div>
     <div class="btnrow">
         <span>Already have an account? </span> <span>Log in</span>
     </div>
+</div>
 </body>
 </html>
