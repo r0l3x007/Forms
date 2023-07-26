@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
         <img src="austin-poon-JO_S6ewBqAk-unsplash.jpg">
         <div class="lgoWrapper">
+            <img id="logoimg" src="odin-lined.png">
             <div id="logoTxt">DesignByRollo</div>
         </div>
 
@@ -21,53 +25,79 @@
     <h1>You <i>know</i> you want to</h1>
     </div>
 
-    <form>
+    <form id="myForm">
         <h1>Let`s do this!</h1>
         <div class="formBody">
             <div class="row">
                 <div class="inputGroup">
-                     <label for="name">First Name</label>
-                    <input type="text" id="name" name="first_name" placeholder="Enter your first name" required />
+                     <label for="name">FIRST NAME</label>
+                    <input type="text"
+                            id="name" 
+                            name="first_name" 
+                            placeholder="Enter your first name" 
+                            minlength="2"
+                            maxlength="25"
+                            pattern="[A-Za-z]{2,25}"
+                            required/>
                 </div>
                 <div class="inputGroup">
-                    <label for="name">Last Name</label>
-                    <input type="text" id="name" name="last_name" placeholder="Enter your last name" required />
+                    <label for="name">LAST NAME</label>
+                    <input type="text" 
+                            id="name" 
+                            name="last_name" 
+                            placeholder="Enter your last name" 
+                            minlength="2"
+                            maxlength="25"
+                            pattern="[A-Za-z ]{2,25}"
+                            required />
                 </div>
             </div>
         
 
         <div class="row">
             <div class="inputGroup">
-                <label for="email">Email</label>
+                <label for="email">EMAIL</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required />
             </div>
 
             <div class="inputGroup">
-                <label for="phone">Phone Number</label>
+                <label for="phone">PHONE NUMBER</label>
                 <input type="tel" id="phone" name="phone_number"  placeholder="0000000000"  required />
             </div>
         </div>
 
         <div class="row">
             <div class="inputGroup">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="user_password" required />
+                <label for="password">PASSWORD</label>
+                <input type="password" 
+                    id="password" 
+                    name="user_password"  
+                    minlength="8"
+                    placeholder="Password should be 8 characters long." 
+                    required />
+                    <span id="pswUnder"></span>
             </div>
 
             <div class="inputGroup">
-                <label for="password">Reconfirm Password</label>
-                <input type="password" id="password" name="reconfirmed_password" required />
+                <label for="passwordConfirm">RECONFIRM PASSWORD</label>
+                <input type="password" 
+                        id="passwordConfirm" 
+                        name="reconfirmed_password" 
+                        placeholder="Reconfirm your password" 
+                        required />
             </div>
         </div>
         </div>
     </form>
-
+    <script src="pswvalidation.js">
+    </script>
     <div class="btnrow">
         <button> Create Account</button>
     </div>
     <div class="btnrow">
-        <span>Already have an account? </span> <span>Log in</span>
+        <span>Already have an account? </span> <span id="logme">Log in</span>
     </div>
 </div>
+
 </body>
 </html>

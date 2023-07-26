@@ -8,6 +8,8 @@
 
 }
 
+
+
 *{
     margin:0;
     padding:0;
@@ -17,7 +19,8 @@
 body{
     height: 100v;
     display: flex;
-    font-family: ;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(54, 54, 54);
 }
 
 img{
@@ -29,33 +32,40 @@ img{
 .entirewrap{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: rgb(252, 251, 248);
 }
 
+#logoimg{
+    height:100px;
+    width: 100px;
+}
 
 .lgoWrapper{
+    display: flex;
     background-color: rgba(0, 0, 0, 0.664);
     height: 150px;
     width:50%;
     position: absolute;
     top:30%;
+    justify-content: center;
+    align-items: center;
 }
 
 #logoTxt{
     text-align: center;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     padding: 50px;
     font: 4em "norsebold";
-    
 }
 
 .hwrapper{
     box-sizing: border-box;
-    height: 30vh;
+    height: 23vh;
     width: 50vw;
     text-align: left;
     padding-left: 40px;
     padding-top: 100px;
+    padding-right: 10vw;
     
 }
 
@@ -63,25 +73,73 @@ img{
     box-sizing: border-box;
     text-align: left;
     padding-left: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 10vh;
 }
 
 h1{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
-    font-weight: 550;
+    font-weight: bolder;
+    color: rgb(54, 54, 54)
+}
+
+#pswUnder{
+    font-style: normal;
+    font-size: 0.9em;
+    padding-top: 3px;
+    padding-left: 5px;
+    color: red;
+}
+.btnrow{
+    padding-top: 40px;
+    padding-left: 40px;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(54, 54, 54);
+}
+
+button{
+    height: 60px;
+    width: 250px;
+    border:none;
+    border-radius: 20px;
+    background-color: #63bffdea;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(54, 54, 54);
+    box-shadow: 1px 1px 5px;
+}
+
+button:hover{
+    background-color: #64b8f0ea
+}
+
+button:focus{
+    background-color: #427ba1ea;
+}
+
+#logme{
+    color:#63bffdea;
+    cursor: pointer;
 }
 
 form {
-   height:500px;
+   height: 30vh;
    background-color: rgb(248, 245, 245);
    max-width: 50vw;
+   box-shadow: 1px 2px 20px 5px rgba(104, 103, 103, 0.459);
    
 }
 
 form > h1{
     padding-left: 40px;
     padding-top: 20px;
+    color: rgb(54, 54, 54);
+    font-style: normal;
 }
 .row{
     display: flex;
@@ -98,20 +156,70 @@ form > h1{
 .formBody{
     padding-top: 30px;
     padding-left: 40px;
-    padding-right: 100px;
+    padding-right: 15vw;
 }
+
+label{
+    font-style: normal;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="password"]:hover{
+    cursor: pointer;
+    border: 1px solid #0099ff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37) ;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus{
+    border: 1px solid #0099ff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+    outline: none;
+}
+
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="password"]{
     height: 30px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
     padding-left: 10px;
+    font-size: 1em;
 }
 
+input:not(:focus):not(:placeholder-shown):invalid{
+    border: 1px solid rgb(255, 0, 0);
+}
+
+input:invalid:focus{
+    border: 1px solid #ff0000;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+}
+
+input:valid{
+    border: 1px solid rgb(7, 219, 78);
+}
+
+input:valid:focus{
+    border: 1px solid rgb(7, 219, 78);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+}
+
+input:valid:hover{
+    border: 1px solid rgb(7, 219, 78);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+}
 
 img{
-    width:50%; 
+    width:50%;
+    
 }
