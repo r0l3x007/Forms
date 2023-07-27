@@ -64,7 +64,7 @@ img{
     width: 50vw;
     text-align: left;
     padding-left: 40px;
-    padding-top: 100px;
+    padding-top: 7vh;
     padding-right: 10vw;
     
 }
@@ -204,7 +204,9 @@ input:invalid:focus{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
 }
 
-input:valid{
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid{
     border: 1px solid rgb(7, 219, 78);
 }
 
